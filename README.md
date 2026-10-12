@@ -5,7 +5,7 @@ An enterprise-ready diagnostic pipeline for SCADA solar grid edge Telemetry. Des
 ## Overview
 - **Domain:** Utility & Renewable Energy (Smart Grid Telemetry)
 - **Problem:** Solar inverters convert DC power to AC power for grid distribution. Inverter degradation or panel soiling leads to unaccounted generation losses during peak solar exposure hours.
-- **Solution:** Ingests 15-minute interval SCADA generation logs joined with weather sensor data (irridiation, module temperature) to flag suboptimal conversion ratios (< 85%) and surface failing equipment IDs.
+- **Solution:** Ingests 15-minute interval SCADA generation logs joined with weather sensor data (irradiation, module temperature) to flag suboptimal conversion ratios (< 85%) and surface failing equipment IDs.
 
 ## Tech Stack
 - Python 3.10+
@@ -23,10 +23,3 @@ An enterprise-ready diagnostic pipeline for SCADA solar grid edge Telemetry. Des
 3. Place Plant_1_Generation_Data.csv and Plant_1_Weather_Sensor_Data.csv in data/
 4. Run the engine:
     python src/outpost_telemetry_engine.py
-
-### 3. Freeze Dependencies
-Generate your `requirements.txt`:
-
-```bash
-```
-pip freeze > requirements.txt 
